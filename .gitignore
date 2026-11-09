@@ -1,0 +1,39 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+artifacts/
+*.nupkg
+*.snupkg
+!packages/*.nupkg
+
+# Test and coverage results
+TestResults/
+coverage/
+*.trx
+*.coverage
+coverage.cobertura.xml
+
+# IDE / OS
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pfx
+*.snk
+secrets.json
+appsettings.*.local.json
+nuget.config.local
+
+# Local certificates and keys
+*.pem
+!tests/**/*.pem
+

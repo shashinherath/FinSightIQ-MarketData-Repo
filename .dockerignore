@@ -1,0 +1,33 @@
+# Version control and IDE files
+.git/
+.github/
+.vs/
+.vscode/
+.idea/
+
+# Build artifacts and caches
+**/bin/
+**/obj/
+bin/
+obj/
+artifacts/
+TestResults/
+*.nupkg
+*.snupkg
+!packages/*.nupkg
+
+# Tests (not needed in runtime image)
+tests/
+
+# Documentation and markdown
+*.md
+docs/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+secrets.json
+
