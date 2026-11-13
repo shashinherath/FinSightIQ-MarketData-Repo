@@ -20,6 +20,7 @@ RUN --mount=type=secret,id=nuget_token,required=false \
     if [ -f /run/secrets/nuget_token ]; then \
         export NUGET_TOKEN=$(cat /run/secrets/nuget_token); \
     fi && \
+    export NUGET_TOKEN="${NUGET_TOKEN:-ghp_dev_token_placeholder}" && \
     dotnet restore "Application/FinSightIQ.MarketDataService.Api/FinSightIQ.MarketDataService.Api.csproj"
 
 # Copy source code and build

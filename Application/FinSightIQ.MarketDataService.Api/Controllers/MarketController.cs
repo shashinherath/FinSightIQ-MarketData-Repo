@@ -69,6 +69,7 @@ public sealed class MarketController : ControllerBase
     /// <param name="symbol">Ticker symbol (e.g. AAPL, MSFT).</param>
     /// <param name="cancellationToken">Request cancellation token.</param>
     [HttpGet("{symbol}/live")]
+    [HttpGet("{symbol}/quote")]
     [ProducesResponseType(typeof(LiveQuoteDto), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
